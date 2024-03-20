@@ -129,7 +129,7 @@
     <section>
         <hr>
         <h2>Formulário</h2>
-        <form>
+        <form method="get" action="">
             <label for="nome">Insira seu nome:</label>
             <input type="text" id="nome" name="nome">
             <br><br>   
@@ -158,16 +158,17 @@
             <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
             <br><br>
 
+            <label>Concordo com os termos de privacidade do site.</label>
+            <input type="checkbox" name="termo" id="aceito">
+            <br><br>
+            
+            
             <input type="submit" value="Enviar">
             <input type="reset" value="Reset">
 
         <!--    <select name="selecionar" id="selecao"></select>
                 <option value=""></option>
                 <option value=""></option> -->
-            
-            <label>Concordo com os termos de privacidade do site.</label>
-            <input type="checkbox" name="termo" id="aceito">
-            <br><br>
 
             
         </form>
