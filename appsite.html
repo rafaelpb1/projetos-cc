@@ -46,12 +46,38 @@
         }
 
         .conteudo {
-            min-height: 350px;
+            min-height: 360px;
         }
 
         .form input,
         textarea {
             font-size: larger;
+        }
+
+        .stylehtml {
+            background-color: coral;
+        }
+
+        .stylecss {
+            background-color: blueviolet;
+        }
+
+        .stylejs {
+            background-color: crimson;
+        }
+
+        .tres-1 {
+            padding: 20px;
+            text-align: justify;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .tres-2 {
+            display: flex;
+        }
+
+        .menu {
+            display: flex;
         }
     </style>
 
@@ -63,7 +89,17 @@
             <h1><b>HTML</b> <sup><b>Linguagem de Marcação de Hipertexto</b></sup></h1>
             <h3>Tutoriais para iniciantes</h3>
         </header>
-        <section class="bgbrown">
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio"></a>Início</li>
+                <li><a href="#html"></a>Sobre HTML</li>
+                <li><a href="#tabela"></a>Tabela e Lista</li>
+                <li><a href="#colunas"></a>HTML, CSS e JS</li>
+                <li><a href="#formulario"></a>Formulário de Contato</li>
+                <li><a href="#fim"></a>Links Úteis</li>
+            </ul>
+        </nav>
+        <section class="bgbrown" id="html">
             <p>
 
                 <img src="https://cdn-icons-png.flaticon.com/512/3655/3655567.png" align="left" border="0" width="80px"
@@ -87,7 +123,7 @@
             </p>
             <hr>
         </section>
-        <section class="conteudo">
+        <section class="conteudo" id="tabela">
             <section class="tabela">
                 <table align="center" border="0">
 
@@ -185,14 +221,36 @@
                 </ol>
             </section>
         </section>
-        <hr>
-        <div>
-            <h1>O que é CSS?</h1>
-            <p>Oi</p>
-
-        </div>
-        <section>
-
+        <section class="tres-1" id="colunas">
+            <section class="stylehtml tres-2">
+                <h2>HTML</h2>
+                <p>
+                    HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e
+                    seu conteúdo. Por exemplo, o conteúdo pode ser estruturado em parágrafos, em uma lista com
+                    marcadores ou usando imagens e tabelas.
+                </p>
+            </section>
+            <section class="stylecss tres-2">
+                <h2>CSS</h2>
+                <p>
+                    CSS (Folhas de Estilo em Cascata) permite a você criar páginas web agradáveis, mas como isso
+                    funciona por baixo dos panos? Este artigo explica o que é CSS, com um exemplo de sintaxe simples, e,
+                    também, trata alguns conceitos-chaves sobre a linguagem.
+                </p>
+            </section>
+            <section class="stylejs tres-2">
+                <h2>JavaScript</h2>
+                <p>
+                    JavaScript é uma linguagem de programação interpretada de alto nível usada principalmente para
+                    desenvolvimento web front-end. Ele foi inicialmente criado para tornar as páginas web interativas e
+                    dinâmicas. O JavaScript permite que os desenvolvedores adicionem funcionalidades a páginas da Web,
+                    controlem o comportamento dos elementos do navegador, manipulem HTML e CSS, manipulem eventos
+                    assíncronos e interajam com servidores via APIs.
+                </p>
+            </section>
+        </section>
+        <section id="formulario">
+            <hr>
             <h2>Formulário</h2>
             <form method="get" action="obrigado.html" class="form">
                 <label for="nome">Insira seu nome:</label><br>
@@ -247,6 +305,9 @@
 
             </form>
         </section>
+        <footer>
+
+        </footer>
     </div>
 </body>
 
