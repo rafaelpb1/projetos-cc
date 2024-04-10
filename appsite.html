@@ -41,17 +41,17 @@
         .tabela {
             height: 356px;
             width: 50%;
-            background-color: blue;
+            background-color: #6EC25A;
             float: left;
         }
 
         #tabela {
-            background-color: blue;
+            background-color: #6EC25A;
         }
 
         .lista {
             width: 50%;
-            background-color: rgb(185, 255, 0);
+            background-color: #5a6ec2;
             float: right;
 
 
@@ -68,8 +68,12 @@
         .formulario {
             text-align: center;
             width: 100%;
-            margin: 0px 0;
-            padding-block: 0px;
+            margin: 0px 0px;
+            padding: 0px;
+            background-color: paleturquoise;
+            font-family: monospace;
+            font-size: larger;
+            min-height: 620px;
         }
 
         .stylehtml {
@@ -124,11 +128,30 @@
         }
 
         select {
-            width: 12%;
-            padding: 16px 20px;
+            width: 7%;
+            padding: 10px 20px;
             border: none;
             border-radius: 10px;
-            background-color: #f1f1f1;
+            background-color: #aeaeae;
+        }
+
+        footer {
+            background-color: yellow;
+            list-style-type: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .roda1 {
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .roda2 {
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
         }
     </style>
 
@@ -184,11 +207,11 @@
                     <thead>
                         <caption><b style="color: white;">Tabela</b></caption>
                         <tr>
-                            <th colspan="2" style="background-color: #326750">Tabela de Tags HTML</th>
+                            <th colspan="2" style="background-color: #006666">Tabela de Tags HTML</th>
                         </tr>
                         <tr>
-                            <th bgcolor="#326750">TAGs</th>
-                            <th bgcolor="#326750">UTILIDADE</th>
+                            <th bgcolor="#006666">TAGs</th>
+                            <th bgcolor="#006666">UTILIDADE</th>
                         </tr>
                     </thead>
 
@@ -236,7 +259,7 @@
                             </td>
                         </tr>
                     </tbody>
-                    <tfoot style="background-color: #326750;">
+                    <tfoot style="background-color: #006666;">
                         <td style="color: white;" colspan="2">Fonte: Internet.com</td>
                     </tfoot>
                 </table>
@@ -359,7 +382,28 @@
 
             </form>
         </section>
+
         <footer>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+            <section class="roda1">
+                <h3><strong>Sobre</strong></h3>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Topo</a></li>
+                        <li>Política de privacidade</li>
+                        <li><a href="#formulario">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="roda2">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.w3schools.com">W3School</a></li>
+                        <li><a href="https://www.alura.com.br">Alura</a></li>
+                        <li><a href="https://www.youtube.com">Youtube</a></li>
+                    </ul>
+                </nav>
+            </section>
 
         </footer>
     </div>
