@@ -7,15 +7,17 @@
     <style>
         /* Definindo a classe */
         .inicio {
-            background-color: rgb(79, 161, 161);
+            background-color: rgb(0, 0, 0);
             font-family: Verdana;
-            padding-top: 5%;
-            padding-bottom: 5%;
+            padding-top: 4%;
+            padding-bottom: 4%;
 
         }
 
-        .bgbrown {
+        .bg {
             background-color: paleturquoise;
+            margin: auto;
+            padding: 0px;
         }
 
         /* Identificador = ID */
@@ -30,11 +32,21 @@
 
         }
 
+        p {
+            margin: 0px;
+            padding: 20px;
+
+        }
+
         .tabela {
             height: 356px;
             width: 50%;
             background-color: blue;
             float: left;
+        }
+
+        #tabela {
+            background-color: blue;
         }
 
         .lista {
@@ -46,12 +58,18 @@
         }
 
         .conteudo {
-            min-height: 360px;
+            min-height: 350px;
         }
 
-        .form input,
-        textarea {
+        .form input textarea {
             font-size: larger;
+        }
+
+        .formulario {
+            text-align: center;
+            width: 100%;
+            margin: 0px 0;
+            padding-block: 0px;
         }
 
         .stylehtml {
@@ -73,9 +91,44 @@
             display: flex;
         }
 
-        .menu {
+        #menu ul {
             list-style: none;
-            justify-content: space-between;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            text-align: center;
+            background-color: #00ff91;
+            min-height: 50px;
+        }
+
+        #menu ul li {
+            display: inline;
+        }
+
+        #menu ul li a {
+            padding: 20px 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #menu ul li a:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border-bottom: 3px solid #ffd900;
+        }
+
+        .menu a:active {
+            color: yellow;
+
+        }
+
+        select {
+            width: 12%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #f1f1f1;
         }
     </style>
 
@@ -87,17 +140,17 @@
             <h1><b>HTML</b> <sup><b>Linguagem de Marcação de Hipertexto</b></sup></h1>
             <h3>Tutoriais para iniciantes</h3>
         </header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#inicio"></a>Início</li>
-                <li><a href="#html"></a>Sobre HTML</li>
-                <li><a href="#tabela"></a>Tabela e Lista</li>
-                <li><a href="#colunas"></a>HTML, CSS e JS</li>
-                <li><a href="#formulario"></a>Formulário de Contato</li>
-                <li><a href="#fim"></a>Links Úteis</li>
+        <nav id="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#html">Sobre HTML</a></li>
+                <li><a href="#tabela">Tabela e Lista</a></li>
+                <li><a href="#colunas">HTML, CSS e JS</a></li>
+                <li><a href="#formulario"> Formulário de Contato</a></li>
+                <li><a href="#fim">Links Úteis</a></li>
             </ul>
         </nav>
-        <section class="bgbrown" id="html">
+        <section class="bg" id="html">
             <p>
 
                 <img src="https://cdn-icons-png.flaticon.com/512/3655/3655567.png" align="left" border="0" width="80px"
@@ -110,13 +163,16 @@
                 <strong><ins>HTML</ins></strong>
 
                 (<i>Linguagem de Marcação de Hipertexto</i>)
-            <div>
+            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;">
                 É o bloco de construção da web.
                 <mark>Define o significado e a estrutura do conteúdo da web.</mark> Outras tecnologias do
                 HTML<br>geralmente
                 usadas para descrever a
                 aparência/apresentação (CSS)
                 ou a funcionalidade/comportamento (<em>JavaScript</em>) de uma página web.
+                Os elementos HTML ou também<br>chamados de tags HTML, são utilizados para informar ao navegador que
+                tipo de estrutura é essa que está sendo construída, podendo ser títulos, parágrafos, imagens, links,
+                entre outros.
             </div>
             </p>
             <hr>
@@ -247,7 +303,7 @@
                 </p>
             </section>
         </section>
-        <section id="formulario">
+        <section id="formulario" class="formulario">
             <hr>
             <h2>Formulário</h2>
             <form method="get" action="obrigado.html" class="form">
